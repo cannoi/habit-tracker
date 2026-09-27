@@ -1,0 +1,7 @@
+title: "Habit Tracker"
+eyebrow: SoloHost App
+description: "Tạo ứng dụng: Habit Tracker ứng dụng theo dõi thói quen với mục tiêu hàng ngày, streak, lịch sử và thống kê tiến độ."
+footer_hint: Ready to run on Pi Desktop SoloHost.
+output_file: .env
+after_save: Saved. Start the app from SoloHost.
+fields: []
