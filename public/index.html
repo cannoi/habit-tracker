@@ -3,32 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="description" content="Track daily habits, streaks, history and progress statistics.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <title>Habit Tracker</title>
   <link rel="stylesheet" href="styles.css">
 <style>.paf-made-by{position:fixed;right:8px;bottom:8px;width:min(72px,12vw);max-width:12vw;height:auto;object-fit:contain;opacity:.5;background:transparent;padding:0;border:0;box-shadow:none;filter:none;pointer-events:none;z-index:30}</style></head>
 <body>
-  <div class="container">
-    <h1>Habit Tracker</h1>
-    <div id="auth">
-      <button id="register-btn">Register</button>
-      <button id="login-btn">Login</button>
-    </div>
-    <div id="habit-form" style="display: none;">
-      <h2>Add New Habit</h2>
-      <input type="text" id="habit-name" placeholder="Habit Name">
-      <input type="text" id="habit-description" placeholder="Description">
-      <input type="number" id="habit-target" placeholder="Target">
-      <button id="add-habit-btn">Add Habit</button>
-    </div>
-    <div id="habits-list" style="display: none;">
-      <h2>Your Habits & Progress</h2>
-      <ul id="habits"></ul>
-    </div>
-    <div id="habit-logs" style="display: none;">
-      <h2>Habit Logs</h2>
-      <ul id="logs"></ul>
-    </div>
+  <div class="container" id="app">
+    <header class="app-header">
+      <h1>Habit Tracker</h1>
+    </header>
+    <main id="view" aria-live="polite"></main>
+    <noscript><p class="muted center">Habit Tracker needs JavaScript to run.</p></noscript>
   </div>
+  <dialog id="dialog" class="dialog"></dialog>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
   
 <img class="paf-made-by" src="/made-by.png" alt="Made with App Builder — Pi SoloHost"></body>
